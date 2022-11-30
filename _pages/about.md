@@ -8,23 +8,9 @@ redirect_from:
   - /about.html
 ---
 
-Welcome! I am a data scientist applying machine learning tools and causal
-inference techniques to remote sensing data. I am also an affiliated
-researcher with the [Data-driven Analysis of Peace Project](https://dapp-lab.org)
-and a research collaborator with the 
-[Research on International Policy Implementation Lab](https://bridgingthegapproject.org/ripil).
+Welcome! I am currently an undergraduate student in Computer Science at Peking University.
 
-I earned my Ph.D in Political Science from the
-[University *of* North Carolina *at* Chapel Hill](https://www.unc.edu) and my
-B.A. in Political Science from [Haverford College](https://www.haverford.edu).
-My academic work has been [published](publications) or is forthcoming in
-*International Studies Quarterly*, *Conflict Management and Peace Science*,
-*Political Science Research and Methods*, and *PS: Political Science & Politics*,
-among other outlets. This [research](research) explores the causes and
-consequences of political violence using a broad variety of methods such as
-latent variable models, geospatial analysis, and big data. While primarily
-focused on civil conflict, it also examines contentious political phenomena
-including terrorism and economic statecraft, and develops new measures of
-institutions in international relations. I have [teaching](teaching) experience
-in both quantitative methodology and international relations, and am a certified
-instructor with [The Carpentries](https://carpentries.org).
+My academic work has been [published](publications) or is in submission to conferences/journals. My first work in Peking Univeristy is about pre-training Masked Autoencoders(MAE) with point clouds and images. We designed several interesting yet effective mechenism to improve modal interactives and thus improved model performance on downstream tasked. 
+
+I have also worked as a intern in a startup company called [BodyPark](http://www.bodypark.cn/home) that offers online private training classes. In each lesson, AI model would perform 2D human pose estimation and give suggestions like 'raise your arm higher' to users, and the human private trainer would give more detailed instructions to meet the users' actual needs. I was attracted by such idea when I first heard it and soon became an intern in the AI department. During that period, I experienced working at AI industry and developed practical engineering ablities like git branch mangament, time-management, problem-sovling abilities. etc.
+
