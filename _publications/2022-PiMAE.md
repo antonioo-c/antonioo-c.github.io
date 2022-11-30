@@ -4,7 +4,7 @@ collection: publications
 permalink: /publication/2022-PiMAE
 date: 2022-11-01
 venue: 'In Submission'
-paperurl: '/files/pdf/PiMAE.pdf'
+paperurl: '/files/PiMAE.pdf'
 link: ''
 github: 'https://github.com/BLVLab/PiMAE'
 citation: 'None'
