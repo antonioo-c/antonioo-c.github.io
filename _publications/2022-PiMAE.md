@@ -4,7 +4,7 @@ collection: publications
 permalink: /publication/2022-PiMAE
 date: 2022-11-01
 venue: 'In Submission'
-paperurl: '/files/pdf/research/Agreement Strength.pdf'
+paperurl: '/files/pdf/PiMAE.pdf'
 link: ''
 github: 'https://github.com/BLVLab/PiMAE'
 citation: 'None'
