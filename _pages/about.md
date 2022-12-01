@@ -16,5 +16,5 @@ My first work at Peking Univeristy is about pre-training Masked Autoencoders(MAE
 I have also worked as an intern in a startup company called [BodyPark](http://www.bodypark.cn/home) that offers online private training classes. I was attracted by such idea when I first heard it and soon became a part of their AI department. During that period, I mainly focused on improving model performance to solve detection problems when users are facing back to the camera or when users are moving quickly that the image is in blur. I incorporated innovative techniques into the model and succesfully improved its generalization ablity. My work was highly appreciated.
 
 ---
-# In each lesson, AI model would perform 2D human pose estimation and give suggestions like 'raise your arm higher' to users, and the human private trainer would give more detailed instructions to meet the users' actual needs.
+## In each lesson, AI model would perform 2D human pose estimation and give suggestions like 'raise your arm higher' to users, and the human private trainer would give more detailed instructions to meet the users' actual needs.
 
