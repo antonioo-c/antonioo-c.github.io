@@ -4,7 +4,7 @@ title: "Experience"
 ---
 
 ## Research Experience
-### Peking University       2022 March-November
+### Peking University       <p align="right">2022 March-November</p>
 <b>Research Intern</b>	Advisor: Z. Shanghang Beijing, China
 
 - Project Name: PiMAE: Point cloud and Image Interactive Masked AutoEncoders for 3D Object Detection, first author, CVPR2023 in press
@@ -13,7 +13,7 @@ title: "Experience"
 - Conducted extensive experiments based on different 3D Object Detection method in order to show pre-training effectiveness. Brought 2.9% (AP50) performance gain to SOTA methods
 
 ## Work Experience
-### BodyPark Inc.	           2022 July-October
+### BodyPark Inc.	           <p align="right">2022 July-October</p>
 <b>Computer Vision Engineering Intern</b>	Beijing, China
 
 Body is a startup company called that offers online private training classes. In each lesson, AI model would perform 2D human pose estimation on users and give suggestions like 'raise your arm higher' to users, and the human private trainer would give more detailed instructions to meet the users' actual needs.
