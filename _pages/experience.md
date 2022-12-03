@@ -5,7 +5,8 @@ title: "Experience"
 
 ## Research Experience
 ### Peking University  2022 March-November
-<b>Research Intern</b>	<p align="right">Beijing, China</p>
+<b>Research Intern</b>
+<p align="right">Beijing, China</p>
 
 This is a project supervised by Prof. Z. Shanghang, School of Computer Science, Peking University.
 
@@ -16,7 +17,8 @@ This is a project supervised by Prof. Z. Shanghang, School of Computer Science, 
 
 ## Work Experience
 ### BodyPark Inc. 2022 July-October
-<b>Computer Vision Engineering Intern</b>	<p align="right">Beijing, China</p>
+<b>Computer Vision Engineering Intern</b>
+<p>Beijing, China</p>
 
 Body is a startup company called that offers online private training classes. In each lesson, AI model would perform 2D human pose estimation on users and give suggestions like 'raise your arm higher' to users, and the human private trainer would give more detailed instructions to meet the users' actual needs. For more information, see [here](http://www.bodypark.cn/home)
 
