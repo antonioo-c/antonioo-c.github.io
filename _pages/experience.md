@@ -4,9 +4,13 @@ title: "Experience"
 ---
 
 ## Research Experience
-### Peking University  2022 March-November
-<b align="left">Research Intern</b>
-<p align="right">Beijing, China</p>
+### Peking University  <span style="float:right;">2022 March-November</span>
+<p style="text-align:left;">
+    Research Intern
+    <span style="float:right;">
+        Beijing, China
+    </span>
+</p>
 
 This is a project supervised by Prof. Z. Shanghang, School of Computer Science, Peking University.
 
@@ -16,9 +20,13 @@ This is a project supervised by Prof. Z. Shanghang, School of Computer Science, 
 - Conducted extensive experiments based on different 3D Object Detection method in order to show pre-training effectiveness. Brought 2.9% (AP50) performance gain to SOTA methods
 
 ## Work Experience
-### BodyPark Inc. 2022 July-October
-<b align="left">Computer Vision Engineering Intern</b>
-<p align="right">Beijing, China</p>
+### BodyPark Inc. <span style="float:right;">2022 July-October</span>
+<p style="text-align:left;">
+    Computer Vision Engineering Intern
+    <span style="float:right;">
+        Beijing, China
+    </span>
+</p>
 
 Body is a startup company called that offers online private training classes. In each lesson, AI model would perform 2D human pose estimation on users and give suggestions like 'raise your arm higher' to users, and the human private trainer would give more detailed instructions to meet the users' actual needs. For more information, see [here](http://www.bodypark.cn/home)
 
