@@ -6,7 +6,7 @@ title: "Experience"
 ## Research Experience
 ### Peking University  <span style="float:right;">2022 March-November</span>
 <p style="text-align:left;">
-    Research Intern
+    <b>Research Intern</b>
     <span style="float:right;">
         Beijing, China
     </span>
@@ -14,7 +14,7 @@ title: "Experience"
 
 This is a project supervised by Prof. Z. Shanghang, School of Computer Science, Peking University.
 
-- First author, CVPR2023 in press. Project Name: PiMAE: Point cloud and Image Interactive Masked AutoEncoders for 3D Object Detection
+- First author, <b>CVPR2023</b> in press. Project Name: PiMAE: Point cloud and Image Interactive Masked AutoEncoders for 3D Object Detection
 - Researched 40+ advanced works related to Masked Autoencoders, Multi-model Learning, 3D Object Detection from recent years conferences and presented conclusions via speaking at team meeting
 - Designed and programmed (in Pytorch) a deep learning model with Masked Autoencoders design which performs interaction between point clouds and images and reconstructs them simultaneously
 - Conducted extensive experiments based on different 3D Object Detection method in order to show pre-training effectiveness. Brought 2.9% (AP50) performance gain to SOTA methods
@@ -22,7 +22,7 @@ This is a project supervised by Prof. Z. Shanghang, School of Computer Science, 
 ## Work Experience
 ### BodyPark Inc. <span style="float:right;">2022 July-October</span>
 <p style="text-align:left;">
-    Computer Vision Engineering Intern
+    <b>Computer Vision Engineering Intern</b>
     <span style="float:right;">
         Beijing, China
     </span>
