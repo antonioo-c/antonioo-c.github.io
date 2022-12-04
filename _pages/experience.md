@@ -12,9 +12,10 @@ title: "Experience"
     </span>
 </p>
 
-This is a project supervised by Prof. Z. Shanghang, School of Computer Science, Peking University.
+This is a project supervised by Prof. Z. Shanghang, School of Computer Science, Peking University. 
 
-- First author, <b>CVPR2023</b> in press. Project Name: PiMAE: Point cloud and Image Interactive Masked AutoEncoders for 3D Object Detection
+My Contribution:
+- First author, <b>CVPR2023</b> in submission. Project Name: PiMAE: Point cloud and Image Interactive Masked AutoEncoders for 3D Object Detection
 - Researched 40+ advanced works related to Masked Autoencoders, Multi-model Learning, 3D Object Detection from recent years conferences and presented conclusions via speaking at team meeting
 - Designed and programmed (in Pytorch) a deep learning model with Masked Autoencoders design which performs interaction between point clouds and images and reconstructs them simultaneously
 - Conducted extensive experiments based on different 3D Object Detection method in order to show pre-training effectiveness. Brought 2.9% (AP50) performance gain to SOTA methods
