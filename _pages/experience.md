@@ -13,7 +13,7 @@ title: "Experience"
 </p>
 
 This is a project supervised by Prof. Z. Shanghang, School of Computer Science, Peking University. 
-Anthony Chen, Kevin Zhang, Zihan Wang, Renrui Zhang, Yuheng Lu, Yandong Guo, Shanghang Zhang. PiMAE: Point Cloud and Image Interactive Masked Autoencoders for 3D Object Detection. 2022. <code>CVPR2023 in submission</code>
+Anthony Chen, Kevin Zhang, Zihan Wang, Renrui Zhang, Yuheng Lu, Yandong Guo, Shanghang Zhang. PiMAE: Point Cloud and Image Interactive Masked Autoencoders for 3D Object Detection. 2022. （submitted to CVPR2023)
 
 My Contribution:
 - Researched 40+ advanced works related to Masked Autoencoders, Multi-model Learning, 3D Object Detection from recent years conferences and presented conclusions via speaking at team meeting
