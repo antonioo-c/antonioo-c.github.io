@@ -29,7 +29,7 @@ My Contribution:
     </span>
 </p>
 
-Body is a startup company called that offers online private training classes. In each lesson, AI model would perform 2D human pose estimation on users and give suggestions like 'raise your arm higher' to users, and the human private trainer would give more detailed instructions to meet the users' actual needs. For more information, see [here](http://www.bodypark.cn/home).
+Body is a startup company that offers online private training classes. In each lesson, AI model would perform 2D human pose estimation on users and give suggestions like 'raise your arm higher' to users, and the human private trainer would give more detailed instructions to meet the users' actual needs. For more information, see [here](http://www.bodypark.cn/home).
 
 My Contribution:
 - Researched estimation problems of currently online model and presented information via speaking at department conferences.
