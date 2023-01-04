@@ -10,11 +10,3 @@ redirect_from:
 <iframe src="/files/Anton ChenCV 2022.pdf" width="100%" height="500" frameborder="no" border="0" marginwidth="0" marginheight="0"></iframe>
 
 You can download a PDF copy of my CV here. [English](/files/Anton ChenCV 2022.pdf), [Chinese](/files/ANTON_CV_zh.pdf)
-cgiguuyfxt
-cghv \]v]
-lvyufxddtrzetxfcyyg jgyf 
-vhgkgvyufyft guoyf xdfhggdfghhgjkytreszhgvhjkv                                                                                              guilghjvvgchcg    hghfhjfjhgghjghjghjghjgjhg
-iuyuihu uhuihui 
-uiouiuguigyuftdrdtrxrtdgyubndtdrtd            ]
-yftfytf t7
-ufuyfyuftyftdrdfcxgvbnmcxg
