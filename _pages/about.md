@@ -10,10 +10,22 @@ redirect_from:
 
 Welcome! I am currently an undergraduate student in Computer Science at <b>Peking University</b>.
 
-My academic work has been published or is in press to conferences/journals. Detailed information is in [here](publications).
+## Research Interests
 
-My first work at Peking Univeristy is about pre-training Masked Autoencoders(MAE) with point clouds and images. I worked with Prof. Shanghang Zhang for 8 months and we designed several interesting yet effective mechanisms to improve modal interaction and thus improved model performance on downstream tasks. Our work <i>PiMAE: Point Cloud and Image Interactive Masked Autoencoders for 3D Object Detection</i> has been <strong>accepted to CVPR2023</strong>.
+- 3D Computer Vision
+- Self-Supervised Learning
+- Multi-Modal Learning
+- Generative Models (learning)
 
-I have also worked as an intern in [BodyPark](http://www.bodypark.cn/home), a startup company that offers online private training classes. During that period, I mainly focused on improving model performance to solve human pose estimation problems specailly when users are facing back to the camera or when users are moving quickly that the image is in blur. I incorporated innovative techniques into the model and succesfully improved the generalization ablity. See [My Experiences](experience) for more details.
+## Pulications
+<br>
+
+<img align='left' src="../images/research/pimae_pipeline.png" alt="pipeline" width="180" style="padding: 0px 10px 10px px"/> 
+
+
+{% include base_path %}
+{% for post in site.publications reversed %}
+  {% include archive-single.html %}
+{% endfor %}
 
 

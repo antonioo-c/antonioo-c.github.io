@@ -26,6 +26,10 @@
       </div>
     {% endif %}
 
+    {% if post.image %}
+    <img align='left' src="{{ post.image }}" alt="pipeline" width="180" style="padding: 0px 10px 10px px" /> 
+    {% endif %}
+
     <h2 class="archive__item-title" itemprop="headline">
       {% if post.collection == 'publications' %}
         {{ title }}
