@@ -167,34 +167,39 @@
   </div>
 </section>
 
-<section class="hero teaser">
-  <div class="hero-body">
-    <div class="container is-max-desktop">
-      <video id="teaser" autoplay controls muted loop playsinline height="100%">
-        <source src="./static/images/teaser.mp4"
-                type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        <i>PiMAE</i> something
-      </h2>
-    </div>
-  </div>
-</section>
-
-<!-- <section class="hero is-dark is-small">
+<section class="hero is-small">
   <div class="hero-body">
     <div class="container has-text-centered">
       <div id="results-carousel" class="carousel results-carousel">
         <div>
           <div class="results-item">
-            <video poster="" id="espresso-rgb" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/espresso_rgb.mp4"
-                      type="video/mp4">
-            </video>
-            <video poster="" id="espresso-depth" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/espresso_depth.mp4"
-                      type="video/mp4">
-            </video>
+            <img style="height: 10%;" src="./static/images/pimae/titles.png"
+             alt="pimae reconstruction"/>
+            <img style="height: 20%;" src="./static/images/pimae/pimae_reconstruct1.png"
+             alt="pimae reconstruction"/>
+             <img style="height: 20%;" src="./static/images/pimae/pimae_reconstruct2.png"
+             alt="pimae reconstruction"/>
+          </div>
+        </div>
+        <div>
+          <div class="results-item">
+            <img style="height: 10%;" src="./static/images/pimae/titles.png"
+             alt="pimae reconstruction"/>
+            <img style="height: 20%;" src="./static/images/pimae/pimae_reconstruct3.png"
+             alt="pimae reconstruction"/>
+             <img style="height: 20%;" src="./static/images/pimae/pimae_reconstruct4.png"
+             alt="pimae reconstruction"/>
+          </div>
+        </div>
+        
+        <div>
+          <div class="results-item">
+            <img style="height: 10%;" src="./static/images/pimae/titles.png"
+             alt="pimae reconstruction"/>
+            <img style="height: 20%;" src="./static/images/pimae/pimae_reconstruct5.png"
+             alt="pimae reconstruction"/>
+             <img style="height: 20%;" src="./static/images/pimae/pimae_reconstruct6.png"
+             alt="pimae reconstruction"/>
           </div>
         </div>
 
@@ -203,18 +208,13 @@
       <div class="columns is-centered has-text-centered">
         <div class="column is-three-quarters">
           <p>
-            Here we show results generated with <i>HyperNeRF</i>. These videos show the input video
-            being
-            played
-            back with a stabilized novel camera path. The right side video shows the depth of the
-            scene.
-            Click on the arrows or drag to see more results.
+            PiMAE reconstructs masked 3D point cloud & RGB images simultaneously. 
           </p>
         </div>
       </div>
     </div>
   </div>
-</section> -->
+</section>
 
 
 <section class="section">
@@ -257,25 +257,17 @@
 
 <hr/>
 
-<section class="section">
-  <div class="container is-max-desktop">
-    <h2 class="title is-3">Motivation</h2>
-    <div class="columns is-centered">
-      <p>
-        motivation
-      </p>
-    </div>
-  </div>
-
-
   <div class="container is-max-desktop">
     <div class="content has-text-justified">
       <h2 class="title is-3">PiMAE Pretraining Pipeline</h2>
       <p>
-        pipeline description
+        The point cloud branch samples and clusters point cloud data into tokens and randomly masks the input. 
+        Then the tokens pass through the masking alignment module to generate complement masks for image patches. 
+        After embedding, tokens go through a separate, then shared, and finally separated autoencoder structure. 
+        We lastly engage in a cross-modal reconstruction module to enhance point cloud representation learning.
       </p>
       <div class="has-text-centered">
-        <img style="width: 90%;" src="./static/images/pimae_pipeline.png"
+        <img style="width: 90%;" src="./static/images/pimae/pimae_pipeline.png"
              alt="pimae pipeline"/>
       </div>
     </div>
