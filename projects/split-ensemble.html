@@ -77,6 +77,9 @@
           <a class="navbar-item" href="https://antonioo-c.github.io/projects/pimae.html">
             PiMAE
           </a>
+          <a class="navbar-item" href="https://antonioo-c.github.io/projects/split-ensemble.html">
+            Split-Ensemble
+          </a>
         </div>
       </div>
     </div>
@@ -95,10 +98,10 @@
       </div>
       <div class="container has-text-centered">
         <h1 class="title is-1 publication-title">
-          PiMAE: Point cloud and Image Interactive Masked Autoencoders for 3D Object Detecion
+          Split-Ensemble: Efficient OOD-aware Ensemble via Task and Model Splitting
         </h1>
         <div class="is-size-5 publication-authors">
-          <span class="author-block">CVPR2023</span>
+          <span class="author-block">Arxiv 2023</span>
         </div>
         <div class="is-size-5 publication-authors">
           <div class="author-block">
@@ -108,26 +111,36 @@
             </div> -->
             <a href="https://atchen.com">Anthony Chen</a><sup>1*</sup></div>
           <div class="author-block">
-            <a href="#">Kevin Zhang</a><sup>1*</sup></div>
+            <a href="#">Huanrui Yang</a><sup>2*</sup></div>
           <div class="author-block">
-            <a href="#">Renrui Zhang</a><sup>2</sup></div>
+            <a href="#">Yulu Gan</a><sup>1</sup></div>
           <div class="author-block">
-            <a href="#">Zihan Wang</a><sup>1</sup>
+            <a href="#">Denis A Gudovskiy</a><sup>4</sup>
           </div>
           <div class="author-block">
-            <a href="#">Yuheng Lu</a><sup>1</sup>
+            <a href="#">Zhen Dong</a><sup>2</sup>
           </div>
           <div class="author-block">
-            <a href="#">Yandong Guo</a><sup>3</sup>
+            <a href="#">Haofan Wang</a><sup>3</sup>
+          </div>
+          <div class="author-block">
+            <a href="#">Tomoyuki Okuno</a><sup>4</sup>
+          </div>
+          <div class="author-block">
+            <a href="#">Yohei Nakata</a><sup>4</sup>
           </div>
           <div class="author-block">
             <a href="https://www.shanghangzhang.com/">Shanghang Zhang</a><sup>1</sup>
           </div>
+          <div class="author-block">
+            <a href="#">Kurt Keutzer</a><sup>2</sup>
+          </div>
 
         <div class="is-size-5 publication-authors">
           <span class="author-block"><sup>1</sup>Peking University,</span>
-          <span class="author-block"><sup>2</sup>The Chinese University of Hong Kong,</span>
-          <span class="author-block"><sup>3</sup>Beijing University of Posts and Telecommunications</span>
+          <span class="author-block"><sup>2</sup>UC Berkeley,</span>
+          <span class="author-block"><sup>3</sup>Carnegie Mellon University,</span>
+          <span class="author-block"><sup>4</sup>Panasonic</span>
         </div>
         <div class="is-size-6 publication-authors">
           <span class="author-block">(* equal contribution)</span>
@@ -137,7 +150,7 @@
           <div class="publication-links">
             <!-- PDF Link. -->
             <span class="link-block">
-                <a href="https://arxiv.org/pdf/2303.08129.pdf"
+                <a href="#"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -146,7 +159,7 @@
                 </a>
               </span>
             <span class="link-block">
-                <a href="https://arxiv.org/abs/2303.08129"
+                <a href="#"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="ai ai-arxiv"></i>
@@ -155,12 +168,12 @@
                 </a>
             </span>
             <span class="link-block">
-              <a href="https://github.com/BLVLab/PiMAE"
+              <a href="#"
                  class="external-link button is-normal is-rounded is-dark">
                 <span class="icon">
                     <i class="fab fa-github"></i>
                 </span>
-                <span>Code</span>
+                <span>Code(Coming soon)</span>
                 </a>
             </span>
           </div>
@@ -169,56 +182,6 @@
     </div>
   </div>
 </section>
-
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container has-text-centered">
-      <div id="results-carousel" class="carousel results-carousel">
-        <div>
-          <div class="results-item">
-            <img width="640" height="180" src="./static/images/pimae/titles.png"
-             alt="pimae reconstruction"/>
-            <img width="640" height="480" src="./static/images/pimae/pimae_reconstruct1.png"
-             alt="pimae reconstruction"/>
-             <img width="640" height="480" src="./static/images/pimae/pimae_reconstruct2.png"
-             alt="pimae reconstruction"/>
-          </div>
-        </div>
-        <div>
-          <div class="results-item">
-            <img width="640" height="180" src="./static/images/pimae/titles.png"
-             alt="pimae reconstruction"/>
-            <img width="640" height="480" src="./static/images/pimae/pimae_reconstruct3.png"
-             alt="pimae reconstruction"/>
-             <img width="640" height="480" src="./static/images/pimae/pimae_reconstruct4.png"
-             alt="pimae reconstruction"/>
-          </div>
-        </div>
-        
-        <div>
-          <div class="results-item">
-            <img width="640" height="180" src="./static/images/pimae/titles.png"
-             alt="pimae reconstruction"/>
-            <img width="640" height="480" src="./static/images/pimae/pimae_reconstruct5.png"
-             alt="pimae reconstruction"/>
-             <img width="640" height="480" src="./static/images/pimae/pimae_reconstruct6.png"
-             alt="pimae reconstruction"/>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-three-quarters">
-          <p>
-            PiMAE reconstructs masked 3D point cloud & RGB images simultaneously. 
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
 
 <section class="section">
   <div class="container is-max-desktop">
@@ -229,14 +192,20 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Masked Autoencoders learn strong visual representations and achieve state-of-the-art results in several independent modalities,
-            yet very few works have addressed their capabilities in multi-modality settings. In this work, we focus on point cloud and RGB image data, two modalities that are often presented together in the real world, and explore their meaningful interactions.
-          </p>
-          <p>
-            To improve upon the cross-modal synergy in existing works, we propose PiMAE, a self-supervised pre-training framework that promotes 3D and 2D interaction through three aspects.
-            Specifically, we first notice the importance of masking strategies between the two sources and utilize a projection module to complementarily align the mask and visible tokens of the two modalities. Then, we utilize a well-crafted two-branch MAE pipeline with a novel shared decoder to promote cross-modality interaction in the mask tokens. Finally, 
-            we design a unique cross-modal reconstruction module to enhance representation learning for both modalities. Through extensive experiments performed on large-scale RGB-D scene understanding benchmarks (SUN RGB-D and ScannetV2), we discover it is nontrivial to interactively learn point-image features, where we greatly improve multiple 3D detectors, 2D detectors, and few-shot classifiers by 2.9\%, 6.7\%, and 2.4\%, respectively. 
-          </p>
+            Uncertainty estimation is crucial for machine learning models to detect out-of-distribution (OOD) inputs. 
+            However, the conventional discriminative deep learning classifiers produce uncalibrated closed-set predictions for OOD data.
+             A more robust classifiers with the uncertainty estimation typically require a potentially unavailable OOD dataset for outlier exposure training, 
+             or a considerable amount of additional memory and compute to build ensemble models. 
+             In this work, we improve on uncertainty estimation without extra OOD data or additional inference costs using an alternative Split-Ensemble method. 
+             Specifically, we propose a novel subtask-splitting ensemble training objective, where a common multiclass classification task is split into several complementary subtasks. 
+             Then, each subtask's training data can be considered as OOD to the other subtasks. Diverse submodels can therefore be trained on each subtask with OOD-aware objectives. 
+             The subtask-splitting objective enables us to share low-level features across submodels to avoid parameter and computational overheads. 
+             In particular, we build a tree-like Split-Ensemble architecture by performing iterative splitting and pruning from a shared backbone model, 
+             where each branch serves as a submodel corresponding to a subtask. 
+             This leads to improved accuracy and uncertainty estimation across submodels under a fixed ensemble computation budget. 
+             Empirical study with ResNet-18 backbone shows Split-Ensemble, without additional computation cost, improves accuracy over a single model by 0.8%, 
+             1.8%, and 25.5% on CIFAR-10, CIFAR-100, and Tiny-ImageNet, respectively. OOD detection for the same backbone and in-distribution datasets surpasses a single model baseline by, 
+             correspondingly, 2.2%, 8.1%, and 29.6% mean AUROC.</p>
         </div>
       </div>
     </div>
@@ -246,12 +215,13 @@
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-2">Video</h2>
-        <div class="publication-video">
+        <p> Coming soon</p>
+        <!-- <div class="publication-video">
           <iframe width="640" height="480" src="https://www.youtube.com/embed/rcs8DYAwugQ"
                   title="YouTube video player" frameborder="0"
                   allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen></iframe>
-        </div>
+        </div> -->
       </div>
     </div>
     <!--/ Paper video. -->
@@ -262,19 +232,43 @@
 
   <div class="container is-max-desktop">
     <div class="content has-text-justified">
-      <h2 class="title is-3">PiMAE Pretraining Pipeline</h2>
+      <h2 class="title is-3">Sub-task Splitting</h2>
       <p>
-        The point cloud branch samples and clusters point cloud data into tokens and randomly masks the input. 
-        Then the tokens pass through the masking alignment module to generate complement masks for image patches. 
-        After embedding, tokens go through a separate, then shared, and finally separated autoencoder structure. 
-        We lastly engage in a cross-modal reconstruction module to enhance point cloud representation learning.
+        Each submodel learns its subtask using a subset of the original training data. OOD detection by outlier exposure training is realized using other subtasks' examples. Concatenated ID logits from all submodels implement the original multiclass classification task.
       </p>
       <div class="has-text-centered">
-        <img style="width: 90%;" src="./static/images/pimae/pimae_pipeline.png"
+        <img style="width: 90%;" src="./static/images/splitensemble/subtask.png"
              alt="pimae pipeline"/>
       </div>
     </div>
   </div>
+
+  <div class="container is-max-desktop">
+    <div class="content has-text-justified">
+      <h2 class="title is-3">Iterative Splitting & Pruning</h2>
+      <p>
+        Starting from a shared backbone, we compute the layer-wise sensitivity mask $\mathcal{M}$ for each subtask loss, and calculate pair-wise IoU score $J$ across different subtasks for the layer-wise correlation graph. Model is split at the layer with a small minimal cutting threshold (MCT), and, then, is pruned globally. Applying splitting and pruning in an iterative fashion leads to the final Split-Ensemble architecture that satisfies the cost constraints.
+      </p>
+      <div class="has-text-centered">
+        <img style="width: 90%;" src="./static/images/splitensemble/split.png"
+             alt="pimae pipeline"/>
+      </div>
+    </div>
+  </div>
+
+  <div class="container is-max-desktop">
+    <div class="content has-text-justified">
+      <h2 class="title is-3">Visualization on Learned Features</h2>
+      <p>
+        We visualize the learned feature map activations of a Split-Ensemble model across different layers using Score-CAM. The shared feature maps, delineated by dashed lines, represent the common features extracted across different submodels, emphasizing the model's capacity to identify and leverage shared representations. The distinct feature maps outside the dashed boundaries correspond to specialized features pertinent to individual sub-tasks, demonstrating the Split-Ensemble model's ability to focus on unique aspects of the data when necessary. This visualization underscores the effectiveness of the Split-Ensemble architecture, highlighting its dual strength in capturing both shared and task-specific features within a single, cohesive framework, thereby bolstering its robustness and adaptability in handling diverse image classification and OOD detection tasks.
+      </p>
+      <div class="has-text-centered">
+        <img style="width: 90%;" src="./static/images/splitensemble/scorecam.png"
+             alt="pimae pipeline"/>
+      </div>
+    </div>
+  </div>
+
 </section>
 
 <hr/>
@@ -282,12 +276,13 @@
 <section class="section" id="BibTeX">
   <div class="container content is-max-desktop">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@inproceedings{chen2023pimae，
+    <p>Coming Soon</p>
+    <!-- <pre><code>@inproceedings{chen2023pimae，
       title={PiMAE: Point Cloud and Image Interactive Masked Autoencoders for 3D Object Detection},
       author = {Chen, Anthony and Zhang, Kevin and Zhang, Renrui and Wang, Zihan and Lu, Yuheng and Guo, Yandong and Zhang, Shanghang},
       booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
       year={2023}
-    }</code></pre>
+    }</code></pre> -->
   </div>
 </section>
 
