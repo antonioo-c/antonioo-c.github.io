@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="DrivenGen: A novel approach that integrates robust 3D conditions into driving world models, enhancing spatial understanding and action controllability for autonomous driving.">
+  <meta name="keywords" content="DrivenGen, Autonomous Driving, World Models, 3D Scene Generation">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:image" content="./static/images/drivengen/thumbnail.png"/>
+  <link rel="image_src" href="./static/images/drivengen/thumbnail.png">
+  <link rel="icon" type="image/x-icon" href="./static/images/favicon.ico"/>
+
+  <title>DrivenGen: 3D-Aware Driving World Models with Enhanced Action Controllability</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EDF010G6PN"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-EDF010G6PN');
+  </script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script src="https://unpkg.com/interactjs/dist/interact.min.js"></script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="./static/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="./static/slick/slick-theme.css"/>
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <style>
+    .video-placeholder {
+      background-color: #f5f5f5;
+      border: 2px dashed #ddd;
+      border-radius: 8px;
+      padding: 2rem;
+      margin: 1rem 0;
+      min-height: 300px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .video-placeholder p:first-child {
+      font-size: 1.2rem;
+      color: #666;
+      margin-bottom: 1rem;
+    }
+    .video-placeholder p:last-child {
+      color: #888;
+      font-style: italic;
+    }
+  </style>
+
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container">
+      <div class="container has-text-centered">
+        <h1 class="title is-1 publication-title">
+          DrivenGen: 3D-Aware Driving World Models with Enhanced Action Controllability
+        </h1>
+        <div class="is-size-5 publication-authors">
+          <span class="author-block">NeurIPS 2025 Submission #2626</span>
+        </div>
+        <div class="is-size-5 publication-authors">
+          <div class="author-block">
+            Anonymous Authors
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <div id="results-carousel" class="carousel results-carousel">
+        <div>
+          <div class="results-item">
+            <h2 class="title is-4">Trajectory Following</h2>
+            <div class="video-placeholder">
+              <p>[Video Coming Soon]</p>
+              <p>Demonstration of precise trajectory following capabilities</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="results-item">
+            <h2 class="title is-4">Novel View Synthesis</h2>
+            <div class="video-placeholder">
+              <p>[Video Coming Soon]</p>
+              <p>Demonstration of novel view synthesis from single image</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="results-item">
+            <h2 class="title is-4">Scene Editing</h2>
+            <div class="video-placeholder">
+              <p>[Video Coming Soon]</p>
+              <p>Demonstration of dynamic scene editing capabilities</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract and Method sections temporarily removed for anonymous submission -->
+    
+    <!-- Results. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Results</h2>
+        <div class="content has-text-justified">
+          <p>
+            Our method significantly outperforms existing driving world models in both visual quality and trajectory following accuracy:
+          </p>
+          <ul>
+            <li>Achieves better scores on LPIPS (0.2577), PSNR (22.1746), SSIM (0.6569), FID (6.3689), and FVD (69.2641)</li>
+            <li>Demonstrates superior trajectory following with a trajectory error of 0.00027</li>
+            <li>Enables advanced applications like corner case synthesis, scene editing, and VLA planning assistance</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content has-text-centered">
+          <p>
+            DrivenGen: 3D-Aware Driving World Models with Enhanced Action Controllability | NeurIPS 2025 Submission #2626
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html> 
