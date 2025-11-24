@@ -198,9 +198,9 @@ nav {
 
 .pub-wrapper .title a {
   color       : black;
-  font-weight : var(--serif-weight);
+  font-weight : 550;
   font-family : var(--serif-font);
-  font-size   : 16px;
+  font-size   : 18px;
 }
 
 .pub-wrapper .title a:hover {
@@ -208,11 +208,11 @@ nav {
 }
 
 .pub-wrapper .authors {
-  color : var(--light-gray);
+  color : black;
 }
 
 .pub-wrapper .authors a {
-  color           : var(--light-gray);
+  color           : inherit;
   text-decoration : underline;
 }
 
@@ -221,7 +221,7 @@ nav {
 }
 
 .pub-wrapper .authors me {
-  color : black;
+  text-decoration : underline;
 }
 
 .pub-wrapper .figure img {
