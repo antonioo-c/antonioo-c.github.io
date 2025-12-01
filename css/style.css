@@ -222,6 +222,7 @@ nav {
 
 .pub-wrapper .authors me {
   text-decoration : underline;
+  font-weight: bold;
 }
 
 .pub-wrapper .figure img {
