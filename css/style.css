@@ -1,63 +1,76 @@
-/* Hallmark · checked: 2026-11-04 · genre: editorial (inferred)
- * floor: 0 FAIL (hand-checked; sloplint not run, Node is not installed) · fixed: 11 (7a, 11, 19, 20, 26a, 27, 34, 48, 50, 63, 67) · structural: 2 printed (42, 58)
+/* Hallmark · checked: 2026-11-04 · genre: editorial (inferred) · shape: Index-First (inferred) · hero: none, the profile column leads the page
+ * nav: a cardinal band, the wordmark left and four text links right, after stanford.edu · footer: one quiet line, the name under a hairline on the white page
+ * posture: committed (one cardinal band at the top, cardinal for small signals below it) · surface: absolute (white page, as stanford.edu)
+ * floor: 0 FAIL (hand-checked against sloplint's rules; sloplint not run, Node is not installed) · fixed: 13 (7a, 11, 19, 20, 24b, 26a, 27, 34, 48, 50, 63, 67, 78) · structural: 4 printed (8, 9, 58, 77)
  * built: the project · redesign: polish · v2.0.0 */
 /* Hallmark · dismissed 28a · the LCP is the portrait, loaded with fetchpriority high; the GIF thumbnails stay lazy so phones, where they sit below the fold, do not fetch them up front */
-/* Hallmark · waive 23 · the oxblood navbar band, about 8% of the first screen · the owner asked for a vintage red homepage and the band carries that red */
+/* Hallmark · waive 23 · the cardinal navbar band · the owner asked for a stanford.edu-style header, a cardinal band across the top */
+/* Hallmark · waive 7b · the white page surface · the owner asked to follow stanford.edu, whose page is pure white under #111 text */
+/* Hallmark · answered F12 · experience rows align to the top so each logo sits beside its organisation name, not the middle of a two-line entry */
 /* Hallmark · reworded "2026 – Present" to "Since 2026", "2025 – 2026" to "2025 to 2026" (and the other ranges) · 19 names en dashes */
 /* Hallmark · reworded "Full list →" to "Full list" · 63 names the glued arrow */
 
 /* ==========================================================
  * Anthony Chen, personal homepage
- * Vintage red: cream paper, oxblood ink; Stanford's Source Serif / Source Sans.
+ * After stanford.edu: a cardinal header band, a white page with #111
+ * text, Stanford's grey scale for secondary text and rules, Source Sans 3 for
+ * text and Source Serif 4 (Stanford's free serif) light and large for headings.
  * ========================================================== */
 
 :root {
-  --oxblood      : #8E1B2C;   /* primary red */
-  --oxblood-deep : #6C1220;
-  --paper        : #FBF7EF;   /* page */
-  --paper-deep   : #F3EADA;   /* hover / tinted panels */
-  --mount        : #FFFDF9;   /* warm white behind photos, logos and thumbnails */
-  --ink          : #2A211C;   /* body text */
-  --muted        : #7A6A5C;   /* secondary text */
-  --rule         : #D9C8AC;   /* hairlines */
+  /* Stanford identity colours */
+  --cardinal      : #8C1515;   /* Cardinal Red (9.4:1 on white) */
+  --cardinal-dark : #7A0000;
+  --white         : #FFFFFF;
+  --black         : #111111;   /* stanford.edu body text */
+  --black-90      : #43423E;
+  --black-80      : #585754;   /* 7.2:1 on white */
+  --black-60      : #767674;
+  --black-40      : #ABABA9;
+  --black-20      : #D5D5D4;
+  --black-10      : #EAEAEA;
 
-  --on-oxblood       : rgb(251 247 239 / 0.88);   /* nav link ink on the red band */
-  --on-oxblood-rule  : rgb(251 247 239 / 0.45);
-  --focus            : var(--oxblood);            /* 8.4:1 on paper */
-  --focus-on-oxblood : var(--paper);              /* 7.6:1 on the red band */
+  /* Roles */
+  --paper        : var(--white);
+  --ink          : var(--black);
+  --muted        : var(--black-80);
+  --rule         : var(--black-20);
+  --rule-soft    : var(--black-10);
+  --accent       : var(--cardinal);
+  --accent-deep  : var(--cardinal-dark);
+  --band         : var(--cardinal);
+  --on-band      : var(--white);
+  --on-band-soft : rgb(255 255 255 / 0.82);
+  --focus        : var(--cardinal);
+  --focus-on-band: var(--white);
 
-  --shadow-band  : 0 2px 8px rgb(60 20 20 / 0.18);
-  --shadow-mount : 0 2px 8px rgb(60 40 20 / 0.14);
-  --shadow-thumb : 0 1px 4px rgb(60 40 20 / 0.10);
-  --shadow-lift  : 0 5px 14px rgb(60 40 20 / 0.22);
-
-  /* Stanford identity typefaces: Source Serif 4 (display) + Source Sans 3 (text) */
-  --display-font : 'Source Serif 4', 'Palatino Linotype', Palatino, Georgia, serif;
-  --text-font    : 'Source Sans 3', 'Source Sans Pro', 'Helvetica Neue', Arial, 'PingFang SC', sans-serif;
+  /* Stanford's typefaces: Source Sans 3 (text) + Source Serif 4 (headlines, in place of its licensed "edict") */
+  --display-font : 'Source Serif 4', Georgia, Cambria, 'Times New Roman', serif;
+  --text-font    : 'Source Sans 3', 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, 'PingFang SC', sans-serif;
 }
 
 html {
-  scroll-padding-top : 72px;
+  scroll-padding-top : 80px;
   overflow-x         : clip;
-  scrollbar-color    : var(--rule) var(--paper);
+  scrollbar-color    : var(--black-40) var(--paper);
 }
 
 body {
   font-family : var(--text-font);
-  font-size   : 16px;
+  font-size   : 17px;
   line-height : 1.6;
   color       : var(--ink);
   background  : var(--paper);
   margin-top  : 0;
-  padding-top : 64px;
+  padding-top : 68px;
   overflow-x  : clip;
-  caret-color : var(--oxblood);
+  caret-color : var(--accent);
 }
 
-::selection { background: var(--oxblood); color: var(--paper); }
+::selection { background: var(--accent); color: var(--white); }
 
-a { color: var(--oxblood); text-decoration: none; }
-a:hover { color: var(--oxblood-deep); text-decoration: underline; text-underline-offset: 2px; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { color: var(--accent-deep); text-decoration: underline; text-underline-offset: 3px; }
 
 /* Keyboard focus: an instant ring, never faded in */
 a:focus-visible,
@@ -68,7 +81,7 @@ button:focus-visible {
 }
 
 .navbar a:focus-visible,
-.navbar button:focus-visible { outline-color: var(--focus-on-oxblood); }
+.navbar button:focus-visible { outline-color: var(--focus-on-band); }
 
 strong { font-weight: 600; }
 
@@ -76,16 +89,17 @@ strong { font-weight: 600; }
 .page > .row { margin-left: 0; margin-right: 0; }
 .col-wrapper { padding-left: 0; padding-right: 0; }
 
-/* ---------- Section titles: serif over a double rule ---------- */
+/* ---------- Section titles: light serif, like stanford.edu headlines ---------- */
 .section-title {
   font-family    : var(--display-font);
-  font-size      : 22px;
-  font-weight    : 700;
-  letter-spacing : 0.005em;
-  color          : var(--oxblood);
-  margin         : 0 0 14px;
-  padding-bottom : 6px;
-  border-bottom  : 3px double var(--rule);
+  font-size      : 40px;
+  font-weight    : 400;
+  letter-spacing : -0.015em;
+  line-height    : 1.2;
+  color          : var(--ink);
+  margin         : 0 0 16px;
+  padding-bottom : 12px;
+  border-bottom  : 1px solid var(--rule);
   display        : flex;
   align-items    : baseline;
   justify-content: space-between;
@@ -95,72 +109,76 @@ strong { font-weight: 600; }
 
 .section-title .title-aside {
   font-family    : var(--text-font);
-  font-size      : 15px;
+  font-size      : 16px;
   font-weight    : 600;
   letter-spacing : 0;
 }
 
-/* ---------- Navigation ---------- */
+/* ---------- Navigation: the cardinal band ---------- */
 .navbar {
-  background    : var(--oxblood);
-  padding       : 10px 0;
-  border-bottom : 4px double var(--on-oxblood-rule);
-  box-shadow    : var(--shadow-band);
+  background    : var(--band);
+  padding       : 12px 0;
+  border-top    : 6px solid var(--cardinal-dark);   /* stanford.edu's darker strip above the bar */
 }
 
 .navbar .container { max-width: 1180px; padding-left: 24px; padding-right: 24px; }
 
 .navbar-dark .navbar-brand {
   font-family    : var(--display-font);
-  font-style     : italic;
-  font-weight    : 600;
-  font-size      : 21px;
-  color          : var(--paper);
+  font-weight    : 400;
+  font-size      : 24px;
+  letter-spacing : -0.005em;
+  color          : var(--on-band);
   padding        : 0;
 }
 
 .navbar-dark .navbar-nav .nav-link {
   font-family    : var(--text-font);
-  font-size      : 15px;
-  font-weight    : 600;
-  color          : var(--on-oxblood);
+  font-size      : 16px;
+  font-weight    : 400;
+  color          : var(--on-band);
   padding        : 2px 12px;
   white-space    : nowrap;
 }
 
-.navbar-dark .navbar-nav .nav-link:hover { color: var(--paper); text-decoration: none; }
+.navbar-dark .navbar-nav .nav-link:hover {
+  color                 : var(--on-band);
+  text-decoration       : underline;
+  text-underline-offset : 4px;
+}
 
-.navbar-toggler { border-color: var(--on-oxblood-rule); padding: 2px 8px; }
+.navbar-toggler { border-color: var(--on-band-soft); padding: 2px 8px; }
 
 /* ---------- Left column: self-introduction ---------- */
-.sidebar { padding: 28px 0 24px; }
+.sidebar { padding: 32px 0 24px; }
 
 @media (min-width: 992px) {
   .sidebar {
-    padding-right : 36px;
+    padding-right : 40px;
     border-right  : 1px solid var(--rule);
   }
 }
 
-.profile { text-align: center; margin-bottom: 26px; }
+.profile { text-align: center; margin-bottom: 28px; }
 
-.portrait {
-  display      : inline-block;
-  padding      : 8px 8px 10px;
-  background   : var(--mount);
-  border       : 1px solid var(--rule);
-  box-shadow   : var(--shadow-mount);
+.portrait { display: inline-block; }
+
+.portrait img {
+  display       : block;
+  width         : 220px;
+  max-width     : 100%;
+  height        : auto;
+  border-radius : 10px;
 }
-
-.portrait img { display: block; width: 210px; max-width: 100%; height: auto; }
 
 .profile .name {
   font-family    : var(--display-font);
-  font-weight    : 700;
-  font-size      : 34px;
+  font-weight    : 400;
+  font-size      : 40px;
+  line-height    : 1.15;
+  letter-spacing : -0.015em;
   color          : var(--ink);
-  margin         : 18px 0 2px;
-  letter-spacing : 0.01em;
+  margin         : 20px 0 4px;
   overflow-wrap  : break-word;
   min-width      : 0;
 }
@@ -168,18 +186,18 @@ strong { font-weight: 600; }
 .profile .contact {
   list-style : none;
   padding    : 0;
-  margin     : 10px 0 0;
-  font-size  : 15px;
+  margin     : 12px 0 0;
+  font-size  : 16px;
   color      : var(--muted);
 }
 
-.profile .contact i { font-size: 12px; margin-right: 4px; color: var(--oxblood); opacity: 0.8; }
+.profile .contact i { font-size: 13px; margin-right: 4px; color: var(--muted); }
 
-/* Social links: larger "stamp" buttons, a double oxblood border on cream */
+/* Social links: large outlined circles in cardinal */
 .social-icon {
   list-style : none;
   padding    : 0;
-  margin     : 16px 0 0;
+  margin     : 20px 0 0;
   display    : flex;
   justify-content: center;
   gap        : 12px;
@@ -189,36 +207,36 @@ strong { font-weight: 600; }
   display        : flex;
   align-items    : center;
   justify-content: center;
-  width          : 48px;
-  height         : 48px;
-  font-size      : 21px;
-  color          : var(--oxblood);
+  width          : 46px;
+  height         : 46px;
+  font-size      : 20px;
+  color          : var(--accent);
   background     : var(--paper);
-  border         : 4px double var(--oxblood);
-  border-radius  : 4px;
+  border         : 2px solid var(--accent);
+  border-radius  : 50%;
   transition     : background-color 0.15s ease, color 0.15s ease;
 }
 
-/* One signal: the stamp inks in */
+/* One signal: the circle fills with cardinal */
 .social-icon li a:hover {
-  background      : var(--oxblood);
-  color           : var(--paper);
+  background      : var(--accent);
+  color           : var(--white);
   text-decoration : none;
 }
 
-.side-section { margin-top: 26px; }
+.side-section { margin-top: 32px; }
 .side-section p { margin-bottom: 0; }
-.side-section p + p { margin-top: 10px; }
+.side-section p + p { margin-top: 12px; }
 
 /* Experience entries */
 .exp-list { list-style: none; padding: 0; margin: 0; }
 
 .exp-item {
   display     : flex;
-  gap         : 14px;
+  gap         : 16px;
   align-items : flex-start;
-  padding     : 10px 0;
-  border-bottom: 1px dotted var(--rule);
+  padding     : 12px 0;
+  border-bottom: 1px solid var(--rule-soft);
 }
 
 .exp-item:last-child { border-bottom: none; }
@@ -228,13 +246,13 @@ strong { font-weight: 600; }
   width         : 46px;
   height        : 46px;
   object-fit    : contain;
-  padding       : 5px;
-  background    : var(--mount);
+  padding       : 4px;
+  background    : var(--paper);
   border        : 1px solid var(--rule);
   border-radius : 50%;
 }
 
-.exp-body { flex: 1; min-width: 0; line-height: 1.35; }
+.exp-body { flex: 1; min-width: 0; line-height: 1.4; }
 
 .exp-head {
   display         : flex;
@@ -243,27 +261,26 @@ strong { font-weight: 600; }
   gap             : 8px;
 }
 
-.exp-org  { font-family: var(--display-font); font-weight: 600; font-size: 16.5px; }
+.exp-org  { font-weight: 600; font-size: 17px; color: var(--ink); }
 .exp-date {
   flex-shrink    : 0;
-  font-size      : 13px;
-  font-weight    : 600;
+  font-size      : 14px;
   color          : var(--muted);
 }
-.exp-role { font-style: italic; color: var(--oxblood); font-size: 15px; }
-.exp-desc { font-size: 14.5px; color: var(--ink); margin-top: 2px; }
+.exp-role { color: var(--muted); font-size: 15.5px; }
+.exp-desc { font-size: 15.5px; color: var(--ink); margin-top: 2px; }
 
 /* ---------- Right column: publications ---------- */
-.pub-wrapper { padding: 28px 0 24px; }
+.pub-wrapper { padding: 32px 0 24px; }
 
 @media (min-width: 992px) {
-  .pub-wrapper { padding-left: 36px; }
+  .pub-wrapper { padding-left: 40px; }
 }
 
 .pub-wrapper .section-item {
   margin       : 0;
-  padding      : 16px 0;
-  border-bottom: 1px dotted var(--rule);
+  padding      : 20px 0;
+  border-bottom: 1px solid var(--rule-soft);
 }
 
 .pub-wrapper .section-item:last-child { border-bottom: none; }
@@ -278,44 +295,43 @@ strong { font-weight: 600; }
 }
 
 .pub-wrapper .title a {
-  font-family : var(--display-font);
+  font-family : var(--text-font);
   color       : var(--ink);
   font-weight : 600;
-  font-size   : 18px;
+  font-size   : 19px;
   line-height : 1.3;
 }
 
-.pub-wrapper .title a:hover { color: var(--oxblood); }
+.pub-wrapper .title a:hover { color: var(--accent); }
 
-.pub-wrapper .authors { color: var(--ink); font-size: 15px; margin-top: 3px; }
-.pub-wrapper .authors a { color: inherit; text-decoration: underline; text-decoration-color: var(--rule); }
-.pub-wrapper .authors a:hover { color: var(--oxblood); }
+.pub-wrapper .authors { color: var(--ink); font-size: 15.5px; margin-top: 4px; }
+.pub-wrapper .authors a { color: inherit; text-decoration: underline; text-decoration-color: var(--black-40); text-underline-offset: 2px; }
+.pub-wrapper .authors a:hover { color: var(--accent); text-decoration-color: var(--accent); }
 .pub-wrapper .authors me { font-weight: 700; }
-.pub-wrapper .authors me a { color: var(--oxblood); text-decoration-color: var(--oxblood); }
+.pub-wrapper .authors me a { color: var(--ink); text-decoration-color: var(--accent); }
 
 .pub-wrapper .venue {
-  font-family    : var(--display-font);
-  font-style     : italic;
+  font-family    : var(--text-font);
   font-weight    : 600;
   font-size      : 15px;
-  color          : var(--oxblood);
-  margin-top     : 2px;
+  color          : var(--accent);
+  margin-top     : 4px;
 }
 
 .pub-wrapper .links-container {
   display     : flex;
   align-items : center;
   flex-wrap   : wrap;
-  gap         : 6px 16px;
-  margin-top  : 4px;
-  font-size   : 14.5px;
+  gap         : 8px 20px;
+  margin-top  : 8px;
+  font-size   : 15px;
   font-weight : 600;
 }
 
 .pub-wrapper .links-container iframe { display: block; }
 
-/* Thumbnails: mounted like old photographs */
-.pub-wrapper .figure { display: block; padding-right: 22px; margin: 0; }   /* Bootstrap's .figure is inline-block */
+/* Thumbnails: rounded like stanford.edu's photos */
+.pub-wrapper .figure { display: block; padding-right: 24px; margin: 0; }   /* Bootstrap's .figure is inline-block */
 .pub-wrapper .figure a { display: block; }
 
 .pub-wrapper .figure img {
@@ -323,16 +339,14 @@ strong { font-weight: 600; }
   width         : 100%;
   aspect-ratio  : 3 / 2;
   object-fit    : contain;
-  background    : var(--mount);
-  padding       : 4px;
+  background    : var(--paper);
   border        : 1px solid var(--rule);
-  border-radius : 3px;
-  box-shadow    : var(--shadow-thumb);
-  transition    : box-shadow 0.2s ease;
+  border-radius : 10px;
+  transition    : border-color 0.15s ease;
 }
 
-/* One signal: the mount's shadow deepens */
-.pub-wrapper .figure a:hover img { box-shadow: var(--shadow-lift); }
+/* One signal: the frame turns cardinal */
+.pub-wrapper .figure a:hover img { border-color: var(--accent); }
 
 /* Phones: the thumbnail sits full width above its paper */
 @media (max-width: 767.98px) {
@@ -343,33 +357,36 @@ strong { font-weight: 600; }
 /* ---------- Small screens: stacked columns ---------- */
 @media (max-width: 991.98px) {
   .sidebar {
-    border-bottom : 3px double var(--rule);
-    padding-bottom: 28px;
+    border-bottom : 1px solid var(--rule);
+    padding-bottom: 32px;
   }
 }
 
 @media (max-width: 575.98px) {
   .container.page, .navbar .container { padding-left: 16px; padding-right: 16px; }
-  body { font-size: 16px; }
-  .sidebar { padding-top: 20px; }
-  .portrait { padding: 6px 6px 8px; }
-  .portrait img { width: 150px; }
-  .profile .name { font-size: 28px; margin-top: 14px; }
-  .profile { margin-bottom: 20px; }
-  .social-icon { gap: 10px; }
-  .side-section { margin-top: 22px; }
+  body { font-size: 16.5px; }
+  .sidebar { padding-top: 24px; }
+  .portrait img { width: 160px; }
+  .profile .name { font-size: 32px; margin-top: 16px; }
+  .profile { margin-bottom: 24px; }
+  .social-icon { gap: 8px; }
+  .side-section { margin-top: 24px; }
+  .section-title { font-size: 32px; }
   .pub-wrapper { padding-top: 24px; }
-  .navbar-dark .navbar-collapse .navbar-nav .nav-link { padding: 10px 4px; }   /* 44px tap targets in the open menu */
+  .navbar-dark .navbar-brand { font-size: 21px; }
+  .navbar-dark .navbar-collapse .navbar-nav .nav-link { padding: 12px 4px; }   /* 48px tap targets in the open menu */
 }
 
-/* ---------- Footer ---------- */
+/* ---------- Footer: the same white page, one quiet line ---------- */
 .footer {
-  text-align     : center;
-  color          : var(--muted);
-  font-size      : 14px;
-  padding        : 18px 0 30px;
-  border-top     : 3px double var(--rule);
-  margin-top     : 8px;
+  max-width  : 1180px;
+  margin     : 24px auto 0;
+  padding    : 28px 24px 32px;
+  border-top : 1px solid var(--rule);
+  background : var(--paper);
+  color      : var(--muted);
+  font-size  : 15px;
+  text-align : center;
 }
 
 /* ---------- Reduced motion: no transitions at all ---------- */
