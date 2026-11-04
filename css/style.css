@@ -1,6 +1,7 @@
 /* Hallmark · checked: 2026-11-04 · genre: editorial (inferred)
- * floor: 0 FAIL (hand-checked; sloplint not run, Node is not installed) · fixed: 12 (7a, 11, 19, 20, 26a, 27, 28a, 34, 48, 50, 63, 67) · structural: 2 printed (42, 58)
+ * floor: 0 FAIL (hand-checked; sloplint not run, Node is not installed) · fixed: 11 (7a, 11, 19, 20, 26a, 27, 34, 48, 50, 63, 67) · structural: 2 printed (42, 58)
  * built: the project · redesign: polish · v2.0.0 */
+/* Hallmark · dismissed 28a · the LCP is the portrait, loaded with fetchpriority high; the GIF thumbnails stay lazy so phones, where they sit below the fold, do not fetch them up front */
 /* Hallmark · waive 23 · the oxblood navbar band, about 8% of the first screen · the owner asked for a vintage red homepage and the band carries that red */
 /* Hallmark · reworded "2026 – Present" to "Since 2026", "2025 – 2026" to "2025 to 2026" (and the other ranges) · 19 names en dashes */
 /* Hallmark · reworded "Full list →" to "Full list" · 63 names the glued arrow */
@@ -314,7 +315,7 @@ strong { font-weight: 600; }
 .pub-wrapper .links-container iframe { display: block; }
 
 /* Thumbnails: mounted like old photographs */
-.pub-wrapper .figure { padding-right: 22px; margin: 0; }
+.pub-wrapper .figure { display: block; padding-right: 22px; margin: 0; }   /* Bootstrap's .figure is inline-block */
 .pub-wrapper .figure a { display: block; }
 
 .pub-wrapper .figure img {
@@ -333,8 +334,10 @@ strong { font-weight: 600; }
 /* One signal: the mount's shadow deepens */
 .pub-wrapper .figure a:hover img { box-shadow: var(--shadow-lift); }
 
+/* Phones: the thumbnail sits full width above its paper */
 @media (max-width: 767.98px) {
-  .pub-wrapper .figure { display: none; }
+  .pub-wrapper .figure { padding-right: 0; margin-bottom: 12px; }
+  .pub-wrapper .section-item { padding: 20px 0; }
 }
 
 /* ---------- Small screens: stacked columns ---------- */
@@ -347,8 +350,16 @@ strong { font-weight: 600; }
 
 @media (max-width: 575.98px) {
   .container.page, .navbar .container { padding-left: 16px; padding-right: 16px; }
-  body { font-size: 15.5px; }
-  .profile .name { font-size: 30px; }
+  body { font-size: 16px; }
+  .sidebar { padding-top: 20px; }
+  .portrait { padding: 6px 6px 8px; }
+  .portrait img { width: 150px; }
+  .profile .name { font-size: 28px; margin-top: 14px; }
+  .profile { margin-bottom: 20px; }
+  .social-icon { gap: 10px; }
+  .side-section { margin-top: 22px; }
+  .pub-wrapper { padding-top: 24px; }
+  .navbar-dark .navbar-collapse .navbar-nav .nav-link { padding: 10px 4px; }   /* 44px tap targets in the open menu */
 }
 
 /* ---------- Footer ---------- */
